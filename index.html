@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizi - Destek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #4338CA;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F3F4F6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #6366F1;
+                --primary-dark: #4F46E5;
+                --text-primary: #F9FAFB;
+                --text-secondary: #9CA3AF;
+                --bg-primary: #111827;
+                --bg-secondary: #1F2937;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            background-color: var(--bg-secondary);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .section-content {
+            color: var(--text-secondary);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            background-color: var(--bg-primary);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .contact-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .contact-email {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-email:hover {
+            color: var(--primary-dark);
+        }
+
+        .faq {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Quizi</div>
+            <div class="subtitle">Eğlenceli testler ve arkadaşlık testleri oluşturun, paylaşın!</div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Uygulama Hakkında</h2>
+            <div class="section-content">
+                <p>Quizi, kullanıcıların kendi testlerini oluşturabileceği, paylaşabileceği ve arkadaşlarıyla eğlenceli bir şekilde etkileşimde bulunabileceği bir platformdur.</p>
+            </div>
+        </section>
+
+        <div class="features">
+            <div class="feature">
+                <h3 class="feature-title">Test Oluşturma</h3>
+                <p class="feature-description">Kendi sorularınızla özelleştirilmiş testler oluşturun. Bilgi testleri, kişilik testleri ve arkadaşlık testleri arasından seçim yapın.</p>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Kolay Paylaşım</h3>
+                <p class="feature-description">Oluşturduğunuz testleri arkadaşlarınızla kolayca paylaşın. Sonuçları anında görün ve karşılaştırın.</p>
+            </div>
+            <div class="feature">
+                <h3 class="feature-title">Arkadaşlık Testleri</h3>
+                <p class="feature-description">Arkadaşlarınızın sizi ne kadar iyi tanıdığını test edin. Eğlenceli sorularla dostluğunuzu ölçün.</p>
+            </div>
+        </div>
+
+        <section class="section faq">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <div class="faq-item">
+                <div class="faq-question">Test sonuçlarımı nasıl paylaşabilirim?</div>
+                <div class="faq-answer">Testi tamamladıktan sonra görüntülenen sonuç ekranında paylaş butonuna tıklayarak sonuçlarınızı sosyal medyada paylaşabilirsiniz.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Arkadaşlık testi oluşturmak ücretli mi?</div>
+                <div class="faq-answer">Hayır, Quizi uygulamasındaki tüm özellikler ücretsizdir.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Testlerimi daha sonra düzenleyebilir miyim?</div>
+                <div class="faq-answer">Evet, oluşturduğunuz testleri profilinizden düzenleyebilir ve güncelleyebilirsiniz.</div>
+            </div>
+        </section>
+
+        <div class="contact">
+            <h2 class="contact-title">İletişim</h2>
+            <p>Sorularınız veya geri bildirimleriniz için bize ulaşın:</p>
+            <a href="mailto:support@quizi.app" class="contact-email">support@quizi.app</a>
+        </div>
+    </div>
+</body>
+</html> 
